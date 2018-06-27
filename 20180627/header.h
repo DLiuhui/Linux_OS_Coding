@@ -15,9 +15,9 @@
 #include <fcntl.h>
 #include <sys/select.h>
 #include <sys/time.h>
+#include <sys/wait.h>
 #include <sys/shm.h>
 #include <sys/ipc.h>
-#include <sys/sem.h>
 
 #define check_argc(argc, state) {\
 	if(argc != state) {\

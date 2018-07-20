@@ -1,0 +1,124 @@
+2018-07-19 21:03:57 net disk server begin to work
+2018-07-19 21:04:01 net disk server close
+2018-07-19 21:37:30 net disk server begin to work.
+2018-07-19 21:37:39 ip:192.168.92.128 connect
+2018-07-19 21:37:44 user:ddrh login
+2018-07-19 21:37:47 user:ddrh ls 
+2018-07-19 21:37:58 user:ddrh pwd
+2018-07-19 21:38:03 user:ddrh cd /root
+2018-07-19 21:38:08 user:ddrh cd 
+2018-07-19 21:38:10 user:ddrh pwd
+2018-07-19 21:38:19 user:ddrh cd /root/ddrh
+2018-07-19 21:38:22 user:ddrh ls 0b"����!@
+2018-07-19 21:38:23 user:ddrh ls 
+2018-07-19 21:38:33 user:ddrh remove 
+2018-07-19 21:38:48 user:ddrh disconnect
+2018-07-19 21:38:51 net disk server close
+2018-07-20 11:27:23 net disk server begin to work.
+2018-07-20 11:27:37 ip:192.168.92.128 connect
+2018-07-20 11:27:41 user:1 login
+2018-07-20 11:27:46 user:1 ls 
+2018-07-20 11:27:50 user:1 pwd
+2018-07-20 11:28:01 user:1 gets 
+2018-07-20 11:28:23 user:1 gets ../filec
+2018-07-20 11:31:13 user:1 gets ../../files
+2018-07-20 11:31:20 user:1 disconnect
+2018-07-20 11:31:22 net disk server close
+2018-07-20 11:33:40 net disk server begin to work.
+2018-07-20 11:33:41 ip:192.168.92.128 connect
+2018-07-20 11:33:43 user:1 login
+2018-07-20 11:33:50 user:1 ls 
+2018-07-20 11:33:52 user:1 pwd
+2018-07-20 11:34:03 user:1 gets ../files
+2018-07-20 11:34:48 user:1 disconnect
+2018-07-20 11:34:49 net disk server close
+2018-07-20 11:39:34 net disk server begin to work.
+2018-07-20 11:39:36 ip:192.168.92.128 connect
+2018-07-20 11:39:39 user:1 login
+2018-07-20 11:39:56 user:1 gets ../files
+2018-07-20 11:40:05 user:1 disconnect
+2018-07-20 11:40:10 ip:192.168.92.128 connect
+2018-07-20 11:40:14 user:ddrh login
+2018-07-20 11:40:16 user:ddrh ls 
+2018-07-20 11:40:31 user:ddrh gets 数据库系统原理
+2018-07-20 11:40:38 user:ddrh disconnect
+2018-07-20 11:40:54 ip:192.168.92.128 connect
+2018-07-20 11:40:58 user:ddrh login
+2018-07-20 11:41:01 user:ddrh ls 
+2018-07-20 11:41:07 user:ddrh gets 数据库系统原理
+2018-07-20 11:41:29 user:ddrh disconnect
+2018-07-20 11:41:34 ip:192.168.92.128 connect
+2018-07-20 11:41:36 user:1 login
+2018-07-20 11:41:43 user:1 gets 数据库系统原理
+2018-07-20 11:46:57 net disk server begin to work.
+2018-07-20 11:47:01 ip:192.168.92.128 connect
+2018-07-20 11:47:04 user:1 login
+2018-07-20 11:47:11 user:1 gets 数据库系统原理
+2018-07-20 11:47:46 user:1 disconnect
+2018-07-20 11:48:15 net disk server close
+2018-07-20 12:11:44 net disk server begin to work.
+2018-07-20 12:11:47 ip:192.168.92.128 connect
+2018-07-20 12:11:49 user:1 login
+2018-07-20 12:12:00 user:1 gets 数据库系统原理
+2018-07-20 12:12:44 user:1 disconnect
+2018-07-20 12:12:46 net disk server close
+2018-07-20 12:18:16 net disk server begin to work.
+2018-07-20 12:18:21 ip:192.168.92.128 connect
+2018-07-20 12:18:23 user:1 login
+2018-07-20 12:18:25 user:1 ls 
+2018-07-20 12:18:29 user:1 pwd
+2018-07-20 12:18:44 user:1 gets 数据库系统原理
+2018-07-20 12:24:33 net disk server begin to work.
+2018-07-20 12:24:35 ip:192.168.92.128 connect
+2018-07-20 12:24:37 user:1 login
+2018-07-20 12:24:44 user:1 gets 数据库系统原理
+2018-07-20 12:24:55 user:1 disconnect
+2018-07-20 12:26:10 net disk server close
+2018-07-20 13:14:59 net disk server begin to work.
+2018-07-20 13:15:03 ip:192.168.92.128 connect
+2018-07-20 13:15:06 user:1 login
+2018-07-20 13:15:14 user:1 gets 数据库系统原理
+2018-07-20 13:15:37 user:1 disconnect
+2018-07-20 13:15:39 net disk server close
+2018-07-20 13:33:24 net disk server begin to work.
+2018-07-20 13:33:28 ip:192.168.92.128 connect
+2018-07-20 13:33:31 user:1 login
+2018-07-20 13:33:41 user:1 gets 数据库系统原理
+2018-07-20 13:33:58 user:1 disconnect
+2018-07-20 13:33:59 net disk server close
+2018-07-20 13:34:07 net disk server begin to work.
+2018-07-20 13:34:09 ip:192.168.92.128 connect
+2018-07-20 13:34:11 user:1 login
+2018-07-20 13:34:20 user:1 gets 数据库系统原理
+2018-07-20 13:34:55 user:1 gets 数据库系统原理
+2018-07-20 13:36:29 user:1 disconnect
+2018-07-20 13:36:30 net disk server close
+2018-07-20 13:42:48 net disk server begin to work.
+2018-07-20 13:42:51 ip:192.168.92.128 connect
+2018-07-20 13:42:53 user:1 login
+2018-07-20 13:43:00 user:1 gets 数据库系统原理
+2018-07-20 13:43:25 user:1 disconnect
+2018-07-20 13:43:26 net disk server close
+2018-07-20 13:46:18 net disk server begin to work.
+2018-07-20 13:46:21 ip:192.168.92.128 connect
+2018-07-20 13:46:23 user:1 login
+2018-07-20 13:46:32 user:1 gets 数据库系统原理
+2018-07-20 13:47:00 net disk server close
+2018-07-20 13:51:53 net disk server begin to work.
+2018-07-20 13:51:55 ip:192.168.92.128 connect
+2018-07-20 13:51:57 user:1 login
+2018-07-20 13:52:05 user:1 gets 数据库系统原理
+2018-07-20 13:53:27 user:1 disconnect
+2018-07-20 13:53:28 net disk server close
+2018-07-20 13:56:38 net disk server begin to work.
+2018-07-20 13:56:41 ip:192.168.92.128 connect
+2018-07-20 13:56:44 user:1 login
+2018-07-20 13:56:49 user:1 gets 数据库系统原理
+2018-07-20 13:57:13 user:1 disconnect
+2018-07-20 13:57:13 net disk server close
+2018-07-20 13:59:01 net disk server begin to work.
+2018-07-20 13:59:05 ip:192.168.92.128 connect
+2018-07-20 13:59:07 user:1 login
+2018-07-20 13:59:13 user:1 gets 数据库系统原理
+2018-07-20 13:59:19 user:1 disconnect
+2018-07-20 13:59:20 net disk server close

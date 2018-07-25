@@ -62,7 +62,8 @@ int main(int argc, char **argv)
 	factory_start(&factory);
 	//socket
 	int socket_fd;
-	TCP_link_server(&socket_fd, argv[1], argv[2]);
+	ret_num = TCP_link_server(&socket_fd, argv[1], argv[2]);
+	check_error(-1, ret_num, "TCP_link_server");
 	//epoll
 	int epfd = epoll_create(1);
 	struct epoll_event event, ev[2];

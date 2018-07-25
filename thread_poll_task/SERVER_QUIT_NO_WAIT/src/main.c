@@ -7,6 +7,7 @@ void signal_exit(int signal_num)
 {
 	char exit_flag;
 	if(SIGINT == signal_num){
+		//printf("sigint\n");
 		exit_flag = 'e';
 		write(exit_fd[1], &exit_flag, 1);
 	}
@@ -27,6 +28,7 @@ void *download_file(void *p)
 		if(ptr_fac->work_flag == 0)	//停止工作
 		{
 			pthread_mutex_unlock(&ptr_fac->mutex);
+			printf("thread exit\n");
 			pthread_exit(NULL);
 		}
 		else
@@ -36,6 +38,7 @@ void *download_file(void *p)
 			if(current_task != NULL)
 			{
 				tran_file(current_task->data, FILENAME);
+				//printf("task ok");
 				free(current_task);	//不要在加解锁之间进行内核调用，free涉及内核访问，放在解锁之后
 			}
 		}
@@ -60,7 +63,8 @@ int main(int argc, char **argv)
 	factory_start(&factory);
 	//socket
 	int socket_fd;
-	TCP_link_server(&socket_fd, argv[1], argv[2]);
+	ret_num = TCP_link_server(&socket_fd, argv[1], argv[2]);
+	check_error(-1, ret_num, "TCP_link_server");
 	//epoll
 	int epfd = epoll_create(1);
 	struct epoll_event event, ev[2];
@@ -84,6 +88,7 @@ int main(int argc, char **argv)
 		{
 			if(socket_fd == ev[i].data.fd)	//取得连接
 			{
+				//printf("get socket con\n");
 				new_fd = accept(socket_fd, NULL, NULL);
 				new_task = (pnode_t)calloc(1, sizeof(node_t));
 				new_task->data = new_fd;
@@ -94,6 +99,7 @@ int main(int argc, char **argv)
 			}
 			if(exit_fd[0] == ev[i].data.fd)	//检测到退出信号
 			{
+				//printf("exit_fd\n");
 				close(socket_fd);	//关闭socket，不再接收新的网络请求
 				char flag;
 				ret_num = read(exit_fd[0], &flag, 1);

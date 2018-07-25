@@ -4,8 +4,11 @@
 int TCP_link_server(int *socket_fd, char *ip_addr, char *port_num)
 {
 	int ret_num;
+	int reuse_flag = 1;
 	*socket_fd = socket(AF_INET, SOCK_STREAM, 0);
 	check_TCP(-1, *socket_fd, "socket");
+	ret_num = setsockopt(*socket_fd, SOL_SOCKET, SO_REUSEADDR, &reuse_flag, sizeof(int));
+	check_TCP(-1, ret_num, "setsockopt");
 	struct sockaddr_in server;
 	bzero(&server, sizeof(server));
 	server.sin_family = AF_INET;

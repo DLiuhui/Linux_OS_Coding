@@ -33,8 +33,12 @@ int tran_file(int new_fd, char *filename)
 	while((t.len = read(fd, t.buf, sizeof(t.buf))) > 0)
 	{
 		ret_num = send_n(new_fd, (char*)&t, 4+t.len);
+		//check_error(-1, ret_num, "send_n");
 		if(-1 == ret_num)
+		{
+			printf("trans over\n");
 			goto end;
+		}
 	}
 	send_n(new_fd, (char*)&t, 4+t.len);
 end:

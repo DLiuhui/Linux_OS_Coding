@@ -2,6 +2,7 @@
 int tran_file(int new_fd, char *filename)
 {
 	Train t;
+	//int send_fail_fail = 0;
 	int ret_num;
 	//先发送文件名
 	t.len = strlen(filename);
@@ -18,7 +19,9 @@ int tran_file(int new_fd, char *filename)
 	memcpy(t.buf, &f_stat.st_size, sizeof(off_t));
 	ret_num = send_n(new_fd, (char*)&t, 4+t.len);
 	if(-1 == ret_num)
+	{
 		goto end;
+	}
 	//发送文件内容
 	int fd = open(filename, O_RDONLY);
 	check_error(-1, fd, "open");
@@ -26,7 +29,9 @@ int tran_file(int new_fd, char *filename)
 	{
 		ret_num = send_n(new_fd, (char*)&t, 4+t.len);
 		if(-1 == ret_num)
+		{
 			goto end;
+		}
 	}
 	send_n(new_fd, (char*)&t, 4+t.len);
 end:
